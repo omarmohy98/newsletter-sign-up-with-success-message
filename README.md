@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution repo]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution repo](https://github.com/omarmohy98/newsletter-sign-up-with-success-message)
+- Live Site URL: [Live site](https://newsletter-sign-up-with-success-message-jk9k.onrender.com/)
 
 ## My process
 
