@@ -1,0 +1,127 @@
+/* Mobile Screen Layout */
+@media (min-width: 325px) {
+  .success-section {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0px;
+  }
+  .subscrib-container {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0px;
+    padding: 0px;
+  }
+
+  .descraption-conatiner {
+    width: 100%;
+    order: 2;
+    padding: 25px;
+  }
+
+  .images-conatiner {
+    width: 100%;
+    order: 1;
+  }
+
+  .images-conatiner img:first-child {
+    display: none;
+  }
+
+  .images-conatiner img:last-child {
+    display: inline;
+  }
+}
+
+/* Tablet Screen Layout */
+@media (min-width: 525px) {
+  .success-section {
+    width: 70%;
+    min-height: 100vh;
+    border-radius: 0px;
+  }
+  .subscrib-container {
+    width: 60%;
+    border-radius: 0px;
+    padding: 0px;
+  }
+
+  .descraption-conatiner {
+    width: 100%;
+  }
+
+  .images-conatiner {
+    width: 100%;
+  }
+
+  .images-conatiner img:first-child {
+    display: none;
+  }
+
+  .images-conatiner img:last-child {
+    display: inline;
+  }
+}
+
+@media (min-width: 925px) {
+  .success-section {
+    width: 50%;
+    min-height: 100vh;
+    border-radius: 0px;
+  }
+  .subscrib-container {
+    width: 50%;
+    border-radius: 0px;
+    padding: 0px;
+  }
+
+  .descraption-conatiner {
+    width: 100%;
+  }
+
+  .images-conatiner {
+    width: 100%;
+  }
+
+  .images-conatiner img:first-child {
+    display: none;
+  }
+
+  .images-conatiner img:last-child {
+    display: inline;
+  }
+}
+
+/* Desktop Screen Layout */
+@media (min-width: 1024px) {
+  .success-section {
+    width: 35%;
+    min-height: auto;
+    border-radius: 25px;
+  }
+  .subscrib-container {
+    width: 70%;
+    min-height: auto;
+    border-radius: 25px;
+    padding: 30px;
+    align-items: center;
+  }
+
+  .descraption-conatiner {
+    width: 50%;
+    order: 1;
+    padding: 0px;
+  }
+
+  .images-conatiner {
+    width: 40%;
+    order: 2;
+  }
+
+  .images-conatiner img:first-child {
+    display: inline;
+  }
+
+  .images-conatiner img:last-child {
+    display: none;
+  }
+}
