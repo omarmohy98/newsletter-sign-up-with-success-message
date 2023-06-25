@@ -4,10 +4,11 @@ let label = document.querySelector("label span");
 let subSec = document.querySelector(".subscrib-container");
 let succSec = document.querySelector(".success-section");
 let dissmisBtn = document.querySelector(".btn");
+let validRegx = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 
-inputField.addEventListener("focus", function (e) {
-  setInterval(function () {
-    if (inputField.value.includes("@") && inputField.value.endsWith(".com")) {
+inputField.addEventListener("input", function (e) {
+  setInterval(() => {
+    if (validRegx.test(inputField.value.trim())) {
       label.classList.remove("show");
       label.classList.add("hidden");
       inputField.classList.remove("not-valid");
@@ -16,18 +17,24 @@ inputField.addEventListener("focus", function (e) {
       label.classList.remove("hidden");
       label.classList.add("show");
     }
-  }, 1);
+  });
 });
 
 formBtn.addEventListener("click", function (e) {
   let valid = false;
-  if (inputField.value.includes("@") && inputField.value.endsWith(".com")) {
+  if (validRegx.test(inputField.value.trim())) {
     valid = true;
+    label.classList.remove("show");
+    label.classList.add("hidden");
+    inputField.classList.remove("not-valid");
     subSec.classList.add("hidden");
     succSec.classList.add("show");
     succSec.classList.remove("hidden");
   }
   if (valid === false) {
+    inputField.classList.add("not-valid");
+    label.classList.remove("hidden");
+    label.classList.add("show");
     e.preventDefault();
   }
 });
