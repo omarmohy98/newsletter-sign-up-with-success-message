@@ -1,5 +1,5 @@
 /* Mobile Screen Layout */
-@media (min-width: 325px) {
+@media (min-width: 320px) {
   .success-section {
     width: 100%;
     min-height: 100vh;
